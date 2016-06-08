@@ -4,6 +4,15 @@ Colorizr is a gem for easily adding color to text.
 
 ## Usage
 
+Usage examples:
+```
+require 'colorizr'
+
+puts "John".red
+puts "Paul".green
+puts "George".blue
+puts "Ringo".yellow
+```
 Print a list of available colors:
 ```
 String.colors
@@ -12,17 +21,12 @@ Preview the color options:
 ```
 String.sample_colors
 ```
-Each color is its own method and can be added to the end of a string like so:
-```
-require 'colorizr'
-"Make this red".red
-"Make this blue".blue
-```
+
 
 ## Install
 
-Clone etc.
-
-## Licence
-
-MIT
+Download [colorizr-0.0.1](https://github.com/klsimmons/colorizr) then run
+```
+$ gem install colorizr-0.0.1
+```
+And then require the gem at the top of your file, as shown in the usage examples.

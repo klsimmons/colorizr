@@ -1,0 +1,11 @@
+How does your gem take advantage of Ruby’s metaprogramming capabilities?
+My gem uses define_method to loop through an array of colors and create a method for each one, as opposed to adding the methods manually.
+
+How long did you spend working on this project?
+A few hours.
+
+What was the most rewarding challenge you conquered?
+Getting define_method to work.
+
+Where do you still have room to grow?
+I think there's a lot more I could learn to do with metaprogramming.

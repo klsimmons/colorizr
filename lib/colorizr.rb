@@ -1,5 +1,15 @@
 class String
-  @colors = {black: 30, red: 31, green: 32, yellow: 33, blue: 34, light_gray: 37, pink: 35, white: 97, light_blue: 94}
+  @colors = {
+    black: 30,
+    red: 31,
+    green: 32,
+    yellow: 33,
+    blue: 34,
+    pink: 35,
+    light_gray: 37,
+    light_blue: 94,
+    white: 97
+  }
 
   def self.create_colors
     @colors.each do |color, num|
@@ -21,13 +31,3 @@ class String
     end
   end
 end
-
-
-puts "John".red
-puts "Paul".green
-puts "George".blue
-puts "Ringo".yellow
-
-String.colors
-puts ""
-String.sample_colors
