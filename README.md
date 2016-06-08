@@ -27,6 +27,6 @@ String.sample_colors
 
 Download [colorizr-0.0.1](https://github.com/klsimmons/colorizr) then run
 ```
-$ gem install colorizr-0.0.1
+$ gem install colorizr-0.0.1.gem
 ```
 And then require the gem at the top of your file, as shown in the usage examples.
