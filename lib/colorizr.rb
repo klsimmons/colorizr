@@ -3,7 +3,7 @@ class String
 
   def self.create_colors
     @colors.each do |color, num|
-      self.send(:define_method, "#{color}") do
+      self.send(:define_method, color) do
         "\e[#{num}m#{self}\e[0m"
       end
     end
@@ -12,7 +12,7 @@ class String
   String.create_colors
 
   def self.colors
-    @colors.keys
+    print @colors.keys
   end
 
   def self.sample_colors
@@ -28,5 +28,6 @@ puts "Paul".green
 puts "George".blue
 puts "Ringo".yellow
 
-#print String.colors
+String.colors
+puts ""
 String.sample_colors
