@@ -22,12 +22,14 @@ class String
   String.create_colors
 
   def self.colors
-    print @colors.keys
+    return @colors.keys
   end
 
   def self.sample_colors
     @colors.each do |color, num|
-      puts "This is \e[#{num}m#{color}\e[0m"
+      puts "This is " +  "#{color}".send(color)
     end
   end
 end
+
+String.sample_colors
